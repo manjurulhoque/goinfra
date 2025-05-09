@@ -11,6 +11,7 @@ import (
 func main() {
 	// Add subcommands
 	cmd.RootCmd.AddCommand(commands.GetInitCommand())
+	cmd.RootCmd.AddCommand(commands.GetPlanCommand())
 
 	// Execute the root command
 	cmd.Execute()
